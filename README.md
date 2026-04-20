@@ -1,94 +1,96 @@
+Here is the English version of the `README.md` for the Cashier (Point of Sale) application. You can copy and paste this directly into your repository:
+
+***
+
 # Stellar Cashier DApp
 
-**Stellar Cashier DApp** - Sistem Kasir (Point of Sale) Terdesentralisasi Berbasis Blockchain
+**Stellar Cashier DApp** - Blockchain-Based Decentralized Point of Sale (POS) System
 
-## Deskripsi Proyek
+## Project Description
 
-Stellar Cashier DApp adalah solusi *smart contract* terdesentralisasi yang dibangun di atas blockchain Stellar menggunakan Soroban SDK. Aplikasi ini menyediakan platform yang aman dan tidak dapat diubah (*immutable*) untuk mencatat riwayat transaksi penjualan langsung di blockchain. *Smart contract* ini memastikan bahwa data penjualan bisnis kamu disimpan secara transparan dan hanya dapat dikelola melalui fungsi yang telah ditentukan, menghilangkan ketergantungan pada *database* terpusat yang rentan terhadap manipulasi atau kehilangan data.
+Stellar Cashier DApp is a decentralized smart contract solution built on the Stellar blockchain using the Soroban SDK. It provides a secure, immutable platform for recording sales transactions directly on the blockchain. This smart contract ensures that your business's sales data is stored transparently and can only be managed through predefined functions, eliminating reliance on centralized databases that are vulnerable to manipulation or data loss.
 
-Sistem ini memungkinkan kasir untuk mencatat transaksi baru, melihat riwayat penjualan, dan membatalkan transaksi, dengan memanfaatkan efisiensi dan keamanan jaringan Stellar. Setiap transaksi diidentifikasi secara unik dan disimpan di dalam *storage instance contract*, memastikan persistensi dan keandalan data finansial.
+The system allows cashiers to record new transactions, view sales history, and cancel transactions, leveraging the efficiency and security of the Stellar network. Each transaction is uniquely identified and stored within the contract's instance storage, ensuring the persistence and reliability of your financial data.
 
-## Visi Proyek
+## Project Vision
 
-Visi kami adalah merevolusi sistem pencatatan keuangan dan kasir di era digital dengan cara:
+Our vision is to revolutionize financial record-keeping and cashier systems in the digital age by:
 
-- **Mendesentralisasi Data Penjualan**: Memindahkan catatan transaksi dari server terpusat ke blockchain global yang terdistribusi.
-- **Mencegah Manipulasi Data (Fraud)**: Memberikan jaminan kepada pemilik bisnis bahwa data penjualan tidak dapat diubah secara diam-diam oleh pihak yang tidak bertanggung jawab.
-- **Menjamin Imutabilitas**: Menyediakan catatan permanen dari setiap transaksi masuk dan keluar.
-- **Membangun Sistem Tanpa Kepercayaan Dasar (*Trustless*)**: Menciptakan platform di mana integritas data finansial dijamin oleh kode, bukan oleh pelaporan manual.
+- **Decentralizing Sales Data**: Moving transaction records from centralized servers to a global, distributed blockchain.
+- **Preventing Fraud & Data Manipulation**: Guaranteeing business owners that sales data cannot be silently altered by unauthorized parties.
+- **Guaranteeing Immutability**: Providing a permanent, tamper-proof record of every transaction.
+- **Building Trustless Systems**: Creating a platform where financial data integrity is guaranteed by code, rather than manual reporting.
 
-Kami membayangkan masa depan di mana sistem POS (*Point of Sale*) dapat beroperasi secara otonom, transparan, dan dapat diaudit secara *real-time* oleh pemilik bisnis di mana saja.
+We envision a future where Point of Sale (POS) systems can operate autonomously, transparently, and be audited in real-time by business owners anywhere in the world.
 
-## Fitur Utama
+## Key Features
 
-### 1. **Pencatatan Transaksi Otomatis**
-- Catat penjualan hanya dengan satu pemanggilan fungsi.
-- Masukkan nama barang, jumlah, dan harga satuan; *smart contract* akan menghitung total harga secara otomatis.
-- Pembuatan ID unik (*auto-generated*) untuk setiap resi/transaksi.
+### 1. **Automated Transaction Recording**
+- Record sales with just one function call.
+- Input the item name, quantity, and price per item; the smart contract calculates the total price automatically.
+- Auto-generated unique IDs for every receipt/transaction.
 
-### 2. **Pengambilan Data yang Efisien**
-- Ambil seluruh riwayat transaksi yang tersimpan dalam satu pemanggilan.
-- Representasi data yang terstruktur untuk memudahkan integrasi dengan *frontend* (dashboard admin/kasir).
-- Sinkronisasi *real-time* dengan *state* di blockchain.
+### 2. **Efficient Data Retrieval**
+- Fetch the entire stored transaction history in a single call.
+- Structured data representation for seamless frontend integration (e.g., admin or cashier dashboards).
+- Real-time synchronization with the blockchain state.
 
-### 3. **Pembatalan yang Terlacak (Aman)**
-- Hapus atau batalkan transaksi spesifik menggunakan ID uniknya (misal: untuk kasus *refund* atau salah input).
-- Pembaruan daftar transaksi seketika setelah pembatalan dilakukan.
+### 3. **Secure Deletion & Cancellation**
+- Remove or cancel specific transactions using their unique IDs (useful for refunds or input errors).
+- Immediate update of the transaction list following a cancellation.
 
-### 4. **Transparansi dan Auditabilitas**
-- Lihat semua aktivitas kasir di *ledger* blockchain.
-- Verifikasi berbasis blockchain untuk semua tindakan pencatatan keuangan.
-- Rekam jejak *immutable* yang sangat cocok untuk keperluan pembukuan dan audit.
+### 4. **Transparency and Auditability**
+- View all cashier activities publicly on the blockchain ledger.
+- Blockchain-based verification of all financial entries.
+- Immutable audit trails perfectly suited for bookkeeping and financial audits.
 
-### 5. **Integrasi Jaringan Stellar**
-- Memanfaatkan kecepatan tinggi dan biaya transaksi yang sangat rendah dari jaringan Stellar.
-- Dibangun menggunakan Soroban Smart Contract SDK modern.
-- Arsitektur yang *scalable* untuk volume transaksi toko yang terus bertambah.
+### 5. **Stellar Network Integration**
+- Leverages the high speed and ultra-low transaction costs of the Stellar network.
+- Built using the modern Soroban Smart Contract SDK.
+- Scalable architecture designed to handle growing store transaction volumes.
 
-## Detail Kontrak
+## Contract Details
 
-- **Alamat Kontrak (Contoh):** `CBLU4IUASQ4WUMOXBFLZRSBBLILGOH33GS4LUPKFBCCCMJCDQNMF7G2M`
+- **Contract Address (Example):** `CAKO5H2EN2OQD4QTRW43QYPBTW2ZUKVQ7R5SC5D6UIJWSMV6SNS2UN4W`
 
-## Rencana Pengembangan (Future Scope)
+## Future Scope
 
-### Jangka Pendek (Short-Term Enhancements)
-1. **Manajemen Inventaris**: Menambahkan fitur untuk melacak dan mengurangi stok barang secara otomatis saat transaksi terjadi.
-2. **Katalog Produk**: Menyimpan daftar harga dan nama produk di dalam *state* agar kasir hanya perlu memasukkan ID produk.
-3. **Diskon & Pajak**: Dukungan kalkulasi persentase diskon dan PPN sebelum total harga final disimpan.
+### Short-Term Enhancements
+1. **Inventory Management**: Add functionality to track and automatically deduct stock levels when a transaction occurs.
+2. **Product Catalog**: Store product names and prices within the contract state so cashiers only need to input a product ID.
+3. **Discounts & Taxes**: Support for calculating discount percentages and tax (VAT) before the final price is stored.
 
-### Jangka Menengah (Medium-Term Development)
-4. **Pembayaran Langsung (On-Chain Settlement)**: Mengintegrasikan token/Stablecoin (seperti USDC di jaringan Stellar) agar pelanggan bisa langsung membayar transaksi melalui *crypto wallet*.
-5. **Multi-Kasir (Role-Based Access)**: Mengizinkan beberapa *address* (kasir) untuk menginput data, namun hanya *address* pemilik toko (Admin) yang bisa menghapus data.
-6. **Resi Digital**: Jembatan *off-chain* untuk menghasilkan resi digital yang bisa dikirim ke pelanggan.
+### Medium-Term Development
+4. **On-Chain Settlement**: Integrate tokens or Stablecoins (like USDC on the Stellar network) so customers can pay directly via their crypto wallets.
+5. **Role-Based Access Control**: Allow multiple addresses (cashiers) to input data, while restricting data deletion/cancellation exclusively to the store owner (Admin).
+6. **Digital Receipts**: Build an off-chain bridge to generate and send digital receipts to customers.
 
-### Jangka Panjang (Long-Term Vision)
-7. **Program Loyalitas Web3**: Mengotomatisasi pemberian token *rewards* atau NFT diskon kepada pelanggan tetap setiap kali mereka bertransaksi.
-8. **Prediksi Penjualan berbasis AI**: Menggunakan data *on-chain* untuk dianalisis oleh AI *off-chain* guna memprediksi tren barang terlaris.
-9. **UI Terdesentralisasi**: Melakukan *hosting frontend* kasir di IPFS.
+### Long-Term Vision
+7. **Web3 Loyalty Programs**: Automate the distribution of reward tokens or NFT-based discounts to returning customers upon transaction completion.
+8. **AI-Powered Sales Prediction**: Analyze on-chain sales data using off-chain AI to predict trends and best-selling items.
+9. **Decentralized UI Hosting**: Host the cashier frontend on IPFS or similar decentralized platforms.
 
-### Fitur *Enterprise* (Skala Besar)
-10. **Sinkronisasi Multi-Cabang**: Mengadaptasi sistem untuk jaringan ritel besar dengan identifikasi transaksi antar cabang.
-11. **Pelaporan Pajak Otomatis**: *Trigger* otomatis yang merangkum omset bulanan untuk mempermudah pelaporan pajak.
-12. **Integrasi Rantai Pasok (Supply Chain)**: Menghubungkan data penjualan dengan kontrak pintar *supplier* untuk *restock* barang secara otomatis.
+### Enterprise Features
+10. **Multi-Branch Synchronization**: Adapt the system for large retail chains with cross-branch transaction tracking and identification.
+11. **Automated Tax Reporting**: Set automated triggers that summarize monthly revenue to streamline tax reporting.
+12. **Supply Chain Integration**: Connect sales data with supplier smart contracts for automated inventory restocking.
 
 ---
 
-## Persyaratan Teknis
+## Technical Requirements
 
 - Soroban SDK
-- Bahasa Pemrograman Rust
-- Jaringan Blockchain Stellar (Futurenet / Testnet / Mainnet)
+- Rust programming language
+- Stellar blockchain network (Futurenet / Testnet / Mainnet)
 
-## Memulai Cepat (Getting Started)
+## Getting Started
 
-Lakukan *deploy smart contract* ini ke jaringan Soroban milik Stellar dan berinteraksilah menggunakan tiga fungsi utama berikut:
+Deploy this smart contract to Stellar's Soroban network and interact with it using the three main functions:
 
-- `add_transaction(item_name, quantity, price_per_item)` - Mencatat transaksi baru. Total harga akan dihitung secara otomatis di dalam kontrak.
-- `get_transactions()` - Mengambil daftar semua transaksi penjualan yang telah dicatat.
-- `delete_transaction(id)` - Menghapus atau membatalkan transaksi tertentu berdasarkan ID transaksinya.
+- `add_transaction(item_name, quantity, price_per_item)` - Record a new transaction. The total price will be calculated automatically within the contract.
+- `get_transactions()` - Retrieve the list of all recorded sales transactions.
+- `delete_transaction(id)` - Remove or cancel a specific transaction by its unique ID.
 
 ---
 
-**Stellar Cashier DApp** - Mengamankan dan Memodernisasi Pembukuan Bisnismu di atas Blockchain
-
-ID SmartContract : CAKO5H2EN2OQD4QTRW43QYPBTW2ZUKVQ7R5SC5D6UIJWSMV6SNS2UN4W
+**Stellar Cashier DApp** - Securing and Modernizing Your Business Bookkeeping on the Blockchain
