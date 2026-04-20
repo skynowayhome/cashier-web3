@@ -51,7 +51,7 @@ We envision a future where Point of Sale (POS) systems can operate autonomously,
 
 ## Contract Details
 
-- **Contract Address (Example):** `CAKO5H2EN2OQD4QTRW43QYPBTW2ZUKVQ7R5SC5D6UIJWSMV6SNS2UN4W`
+- **Contract Address :** `CAKO5H2EN2OQD4QTRW43QYPBTW2ZUKVQ7R5SC5D6UIJWSMV6SNS2UN4W`
 
 ## Future Scope
 
